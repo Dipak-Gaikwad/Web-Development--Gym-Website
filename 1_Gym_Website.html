@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+
+    <style>
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            background: url(1_Gym_bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        .left
+        {
+            color: white;
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+        }
+        .left img
+        {
+            width: 150px;
+            filter: invert();           /* inverts the color */
+        }
+        .left div
+        {
+            color: gold;
+            text-align: center;
+            font-family: monospace;
+            font-size: 23px;
+        }
+
+        .mid
+        {
+            color: white;
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+        }
+        .nav_bar
+        {
+            display: inline-block;
+            border: 2px solid gold;
+            border-radius: 20px;
+
+        }
+        .nav_bar li
+        {
+            display: inline-block;
+            margin: 10px;
+
+        }
+        .nav_bar li a
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            font-family: cursive;
+            padding: 30px;     
+        }
+        .nav_bar li a:hover
+        {
+            text-decoration: underline;
+            color: gold;
+            font-size: 30px;
+            font-family: serif;
+            padding: 35px;     
+        }
+
+        .right
+        {
+            color: white;
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+        }
+        .btn
+        {
+            width: 145px;
+            color: gold;
+            background: gray;
+            border: 2px solid gold;
+            border-radius: 20px;
+            display: block;
+            margin: 15px auto;
+            padding: 15px;
+            font-family: fantasy;
+            font-size: 20px;
+            font-style: oblique;
+            cursor: pointer;
+        }
+        .btn:hover
+        {
+            width: 145px;
+            color: rgb(255, 154, 4);
+            background: lightgray;
+            border: 2px solid gold;
+            border-radius: 20px;
+            display: block;
+            margin: 15px auto;
+            padding: 15px;
+            font-family: fantasy;
+            font-size: 20px;
+            font-style: normal;
+            cursor: pointer;
+        }
+
+        .container
+        {
+            margin: 40px;
+            padding: 20px;
+            width: 30%;
+            border: 2px solid gray;
+            border-radius: 20px;
+        }
+        .container h1
+        {
+            color: gold;
+            text-align: center;
+        }
+        .form_group input
+        {
+            width: 325px;
+            color: maroon;
+            background-color: lightgrey;
+            border: 2px solid gold;
+            border-radius: 20px;
+            display: block;
+            margin: 15px auto;
+            padding: 15px;
+            font-family: fantasy;
+            font-size: 20px;
+            font-style: oblique;
+            display: block;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <!-- logo -->
+        <div class="left">
+            <img src="1_Gym_icon.jpg" alt="Logo">
+            <div>HOME WORKOUT</div>
+        </div>
+
+        <!-- navigation bar -->
+        <div class="mid">
+            <ul class="nav_bar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">FITNESS CALCULATOR</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+
+        <!-- buttons -->
+        <div class="right">
+            <button class="btn">Get APP Now</button>
+            <button class="btn">Chat with us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join "Workout Club" now</h1>   
+        <form action="Gym_Website.php">
+            <div class="form_group"><input type="text" placeholder="Enter your Name : "></div>
+            <div class="form_group"><input type="email" placeholder="Enter your E-Mail : "></div>
+            <div class="form_group"><input type="tel" placeholder="Enter your Contact Number : "></div>
+            <div class="form_group"><input type="number" placeholder="Enter your Age : "></div>
+            <div class="form_group"><input type="text" placeholder="Enter your Gender : "></div>
+            <div class="form_group"><input type="text" placeholder="Enter your Locality : "></div>
+            <button class="btn">Submit</button>
+        </form> 
+
+    </div>
+</body>
+</html>
